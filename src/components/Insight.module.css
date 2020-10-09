@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    border: 1px solid #4c8339;
+    border-radius: 15px;
+    background-color: white;
+    margin-bottom: 8px;
+    flex-direction: column;
+  
+}
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 10px 10px;
+}
+.text{
+    font-size: large;
+    padding-bottom: 8px;
+}
+.index{
+    background-color: #4c8339;
+    color: white;
+    padding: 15px;
+    font-size: x-large;
+    font-weight: 800;
+}
+.menuButton{
+    align-self: flex-end;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    outline: inherit;
+}
+.statistics{
+    font-size: small;
+    font-weight: 300;
+}
+@media only screen and (min-width:480px){
+    .container{
+    flex-direction: row;
+    }
+   }
