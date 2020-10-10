@@ -23,7 +23,7 @@ export default function Insight(props) {
       console.log(newData, id);
       setNewData();
     }
-  });
+  },[newData, id]);
 
   return (
     <div className={styles.container}>
@@ -33,6 +33,7 @@ export default function Insight(props) {
           <div className={styles.textContainerEdit}>
             <div
               contentEditable={true}
+              suppressContentEditableWarning={true}
               ref={textRef}
               className={styles.editable}
             >
