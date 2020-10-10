@@ -1,6 +1,8 @@
+
 .container{
+    --green:#4c8339;
     display: flex;
-    border: 1px solid #4c8339;
+    border: 1px solid var(--green);
     border-radius: 15px;
     background-color: white;
     margin-bottom: 8px;
@@ -12,28 +14,59 @@
     flex-direction: column;
     padding: 0 10px 10px 10px;
 }
+.textContainerEdit{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
 .text{
     font-size: large;
-    padding-bottom: 8px;
 }
+
+.editable{
+    font-size: large;
+    border: 1px solid;
+    padding: 8px 4px;
+}
+
 .index{
-    background-color: #4c8339;
+    background-color: var(--green);
     color: white;
     padding: 15px;
     font-size: x-large;
     font-weight: 800;
 }
-.menuButton{
-    align-self: flex-end;
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+#lastButton{
+    margin-left:0;
+}
+
+button{
     background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
+    color: var(--green);
+    border: 1px solid var(--green);
+	border-radius: 20px;
+    padding: 2px 12px;
+    margin-left: 8px;
+    font: inherit;
+    font-size: small;
+    font-weight: 500;
 	cursor: pointer;
     outline: inherit;
 }
+
+
+button:hover{
+    background-color: var(--green);
+    color: white;
+}
 .statistics{
+    padding-top: 8px;
     font-size: small;
     font-weight: 300;
 }

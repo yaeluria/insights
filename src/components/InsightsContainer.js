@@ -53,6 +53,7 @@ export default function InsightsContainer() {
           return (
             <Insight
               key={insight.id}
+              id={insight.id}
               index={index}
               data={insight.data}
               permissions={insight.permissions}
