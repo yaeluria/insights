@@ -1,4 +1,5 @@
 import React from "react";
+import InfoWidget from "./InfoWidget";
 import Insight from "./Insight";
 import styles from "./InsightsContainer.module.css";
 
@@ -49,6 +50,7 @@ export default function InsightsContainer() {
   return (
     <div className={styles.root}>
       <div className={styles.items}>
+      <InfoWidget />
         {insights.map((insight, index) => {
           return (
             <Insight
