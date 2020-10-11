@@ -1,0 +1,20 @@
+.root{
+    background-color: #1183ad;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    color: white;
+    font-size: 22px;
+    padding: 16px 0;
+    display: flex;
+}
+.icon{
+    max-height: 70px;
+}
+@media only screen and (min-width:480px){
+    .root{
+        padding: 24px 8px 24px 0;
+    }
+    .icon{
+        max-height: 100px;
+    }
+   }
