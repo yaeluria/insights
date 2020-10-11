@@ -7,8 +7,13 @@
     font-size: large;
     font-weight: 800;
     text-decoration: none;
-    padding: 16px 24px;
+    padding: 16px 8px;
 }
 .active{
     border-bottom: 5px solid #bbaac8;
 }
+@media only screen and (min-width:480px){
+    .root a{
+       padding: 16px 24px;
+    }
+   }
