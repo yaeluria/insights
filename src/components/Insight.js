@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import styles from "./Insight.module.css";
 import Menu from "./Menu";
 import EditContext from "../editContext";
+import { Link } from "react-router-dom";
 
 export default function Insight(props) {
   const { data, permissions, statistics, index, id } = props;
@@ -23,7 +24,7 @@ export default function Insight(props) {
       console.log(newData, id);
       setNewData();
     }
-  },[newData, id]);
+  }, [newData, id]);
 
   return (
     <div className={styles.container}>
@@ -55,11 +56,13 @@ export default function Insight(props) {
         ) : (
           <div className={styles.textContainer}>
             {permissionExists && <Menu permissions={permissions} id={id} />}
-            <div className={styles.text}>{data}</div>
-            <span className={styles.statistics}>
-              {statistics.publishedContributorsCount} משתתפים תומכים בתובנה (
-              {statistics.publishedContributionsPercent}% מהתשובות)
-            </span>
+            <Link to={`/insight/${id}`}>
+              <div className={styles.text}>{data}</div>
+              <div className={styles.statistics}>
+                {statistics.publishedContributorsCount} משתתפים תומכים בתובנה (
+                {statistics.publishedContributionsPercent}% מהתשובות)
+              </div>
+            </Link>
           </div>
         )}
       </EditContext.Provider>
