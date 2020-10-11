@@ -60,7 +60,6 @@ button{
     font-size: small;
     font-weight: 500;
 	cursor: pointer;
-    outline: inherit;
 }
 
 button:hover{

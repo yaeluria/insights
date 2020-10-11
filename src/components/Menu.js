@@ -19,7 +19,11 @@ export default function Menu(props) {
   return (
     <div className={styles.container}>
       <span className={styles.end}>
-        <button className={styles.menuButton} onClick={toggleMenu}>
+        <button
+          aria-label={menuOpen ? "open menu" : "close menu"}
+          className={styles.menuButton}
+          onClick={toggleMenu}
+        >
           ...
         </button>
       </span>
