@@ -28,7 +28,6 @@
 }
 
 .editable{
-    font-size: large;
     border: 1px solid;
     padding: 8px 4px;
 }
@@ -45,6 +44,7 @@
     justify-content: flex-end;
     margin-top: 8px;
 }
+
 #lastButton{
     margin-left:0;
 }
@@ -63,11 +63,15 @@ button{
     outline: inherit;
 }
 
-
 button:hover{
     background-color: var(--green);
     color: white;
 }
+
+.fontLarge{
+    font-size: large;
+}
+
 .statistics{
     margin-top: 8px;
     font-size: medium;

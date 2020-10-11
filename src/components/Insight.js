@@ -36,16 +36,16 @@ export default function Insight(props) {
               contentEditable={true}
               suppressContentEditableWarning={true}
               ref={textRef}
-              className={styles.editable}
+              className={`${styles.editable} ${styles.text}`}
             >
               {data}
             </div>
             <span className={styles.buttons}>
-              <button onClick={() => setEdit(false)} className={styles.button}>
+              <button onClick={() => setEdit(false)} className={`${styles.button} ${styles.fontLarge}`}>
                 ביטול
               </button>
               <button
-                className={styles.button}
+                className={`${styles.button} ${styles.fontLarge}`}
                 id={styles.lastButton}
                 onClick={saveEdited}
               >
