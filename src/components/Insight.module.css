@@ -2,7 +2,7 @@
     --green:#4c8339;
     display: flex;
     border: 1px solid var(--green);
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: white;
     margin-bottom: 8px;
     flex-direction: column;
