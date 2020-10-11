@@ -14,15 +14,19 @@ export default function Insight(props) {
   const [newData, setNewData] = useState();
   const saveEdited = () => {
     const currentText = textRef.current.innerText;
-    if (currentText !== data) {
-      setNewData(currentText);
+    if (currentText) {
+      if (currentText !== data) {
+        setNewData(currentText);
+      }
+      setEdit(false);
     }
-    setEdit(false);
   };
   useEffect(() => {
-    //update data for insight in database - (viewer.process.insights.filter(insight => insight.id === id)).updateData(newData);
-    console.log(newData, id);
-    setNewData();
+      //update data for insight in database - (viewer.process.insights.filter(insight => insight.id === id)).updateData(newData);
+      if (newData){
+        console.log(newData, id);
+        setNewData();
+      }
   }, [newData, id]);
 
   return (
