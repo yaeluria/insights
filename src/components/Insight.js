@@ -55,7 +55,7 @@ export default function Insight(props) {
         ) : (
           <div className={styles.textContainer}>
             {permissionExists && <Menu permissions={permissions} id={id} />}
-            <Link to={`/insight/${id}`}>
+            <Link to={`/insights/${id}`}>
               <div className={styles.text}>{data}</div>
               <div className={styles.statistics}>
                 {statistics.publishedContributorsCount} משתתפים תומכים בתובנה (

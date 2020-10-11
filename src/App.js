@@ -19,13 +19,13 @@ function App() {
             <Route path="/answers">
               <h1>תשובות</h1>
             </Route>
-            <Route path="/insights">
+            <Route exact path="/insights">
               <InsightsContainer />
             </Route>
             <Route path="/decisions">
               <h1>החלטות</h1>
             </Route>
-            <Route path="/insight/:id">
+            <Route path="/insights/:id">
               <h1>single insight</h1>
             </Route>
           </Switch>
