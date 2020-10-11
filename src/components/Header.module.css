@@ -1,0 +1,32 @@
+.root{
+    background-color: #bbaac8;
+    font-size: xx-large;
+    padding: 16px;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+}
+.desktop{
+    display: none;
+}
+.mobile{
+    display: flex;
+}
+@media only screen and (min-width:480px){
+    .desktop{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+    .root{
+        justify-content: center;
+    }
+   }
+.logo{
+    max-height: 60px;
+    background-color: white;
+    padding: 16px 0;
+
+}
