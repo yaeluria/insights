@@ -13,17 +13,16 @@ export default function Insight(props) {
   const permissionExists = Object.values(permissions).some((v) => v === true);
   const [newData, setNewData] = useState();
   const saveEdited = () => {
-    if (textRef.current.innerText !== data) {
-      setNewData(textRef.current.innerText);
+    const currentText = textRef.current.innerText;
+    if (currentText !== data) {
+      setNewData(currentText);
     }
     setEdit(false);
   };
   useEffect(() => {
-    if (newData) {
-      //update data for insight in database - (viewer.process.insights.filter(insight => insight.id === id)).updateData(newData);
-      console.log(newData, id);
-      setNewData();
-    }
+    //update data for insight in database - (viewer.process.insights.filter(insight => insight.id === id)).updateData(newData);
+    console.log(newData, id);
+    setNewData();
   }, [newData, id]);
 
   return (
