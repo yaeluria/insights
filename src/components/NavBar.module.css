@@ -1,0 +1,14 @@
+.root{
+    display: flex;
+    justify-content: space-evenly;
+}
+.root a{
+    color: inherit;
+    font-size: large;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 16px 24px;
+}
+.active{
+    border-bottom: 5px solid #bbaac8;
+}
